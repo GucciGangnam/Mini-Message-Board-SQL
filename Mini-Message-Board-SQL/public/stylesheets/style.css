@@ -1,0 +1,42 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+p{ 
+  margin: 0px;
+}
+.message-container {
+  border: 1px solid #ddd;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  min-width: 500px;
+  gap: 5px;
+}
+
+.message-content {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.message-meta {
+  display: flex;
+  gap: 50px;
+}
+
+.message-author {
+  color: rgb(172, 172, 172);
+}
+
+.message-timestamp {
+  color: rgb(172, 172, 172);
+}

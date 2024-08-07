@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>
+    <%= title %>
+  </h1>
+
+  <% messages.forEach(function(message) { %>
+    <div class="message-container">
+      <p class="message-content">
+        <%= message.message %>
+      </p>
+      <div class="message-meta">
+        <p class="message-author"><%= message.author %>
+        </p>
+        <p class="message-timestamp">
+          <%= new Date(message.timestamp).toLocaleString('en-GB', { day: '2-digit' , month: '2-digit' ,
+            year: '2-digit' , hour: '2-digit' , minute: '2-digit' , hour12: false }) %>
+        </p>
+      </div>
+    </div>
+    <% }); %>
+
+
+</body>
+
+</html>
