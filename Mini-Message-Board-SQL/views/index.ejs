@@ -13,6 +13,34 @@
     <%= title %>
   </h1>
 
+  <div class="new-message-container">
+    <p class="new-message-prompt">Add a message here</p>
+
+
+
+    <form method="POST" action="/newmessage"
+    class="new-message-form">
+
+    <input
+    name="message"
+    maxlength="255"
+    placeholder="Your message"
+    required/>
+
+    <input
+    name="name"
+    maxlength="20"
+    placeholder="Your name"
+    required/>
+    <button
+    type="submit"
+    >Post</button>
+
+  </form>
+
+
+    </div>
+
   <% messages.forEach(function(message) { %>
     <div class="message-container">
       <p class="message-content">
